@@ -15,7 +15,7 @@ pipeline{
         stage('push Docker Image to Docker Hub'){
             steps{
                 echo "push Docker image to docker hub"
-                bat "docker push teju898/week8"
+                bat "docker push teju898/week8:t1"
             }
         }
         stage('Deploy to Kuberentes'){
