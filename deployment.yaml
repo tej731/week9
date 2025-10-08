@@ -16,5 +16,5 @@ spec:
         - name: kubedemoapp
           image: teju898/week8:t1 # use your Docker Hub image
           ports:
-            - containerPort: 5000
+            - containerPort: 5001
 
