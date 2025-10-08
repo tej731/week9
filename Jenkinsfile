@@ -4,7 +4,7 @@ pipeline{
 	    stage('Build Docker IAmge'){
 	        steps{
                 echo "Build Docker Image"
-                bat "docker build -t kubedemoapp:v1 ."
+                bat "docker build -t teju898/week8:t1 ."
 	        }
 	    }
 	    stage('Docker Login'){
