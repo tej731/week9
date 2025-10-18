@@ -4,7 +4,7 @@ pipeline{
 	    stage('Build Docker IAmge'){
 	        steps{
                 echo "Build Docker Image"
-                bat "docker build -t teju898/week8:t1 ."
+                bat "docker build -t teju898/kubernetes:t1 ."
 	        }
 	    }
 	    stage('Docker Login'){
@@ -15,7 +15,7 @@ pipeline{
         stage('push Docker Image to Docker Hub'){
             steps{
                 echo "push Docker image to docker hub"
-                bat "docker push teju898/week8:t1"
+                bat "docker push teju898/kubernetes:t1"
             }
         }
         stage('Deploy to Kuberentes'){
